@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Japão</title>
+</head>
+
+<body>
+  <header class="azul-forte-bg" id="header-bg">
+  <nav class="navbar navbar-expand-lg d-flex justify-content-between container">
+    <img src="imgs/OIP.jpg" alt="" class="rounded-4">
+    <div>
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav gap-3">
+            <a class="nav-link fs-4 azul-forte2-fonte" href="#sec-1-bg" id="link-info">Informações</a>
+            <a class="nav-link fs-4 azul-forte2-fonte" href="#titulo-galeria" id="link-galeria">Galeria</a>
+            <a class="nav-link fs-4 azul-forte2-fonte" href="#curiosidades-bg" id="link-curiosidades">Curiosidades</a>
+            <button class="btn vermelho-bg text-white" onclick="alterarCor()" id="btn-mudar">C/E</button>
+            <button class="btn vermelho-bg text-white" onclick="aumentarFonte()" id="btn-mudar">+</button>
+            <button class="btn vermelho-bg text-white" onclick="diminuirFonte()" id="btn-mudar">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="py-5 azul-fraco-bg" id="sec-1-bg">
+    <h1 class="text-center azul-forte2-fonte" id="sec-1-titulo">Informações</h1>
+
+    <div class="d-flex container w-75 gap-5 my-5 py-5">
+      <div class="content">
+        <h3 class="vermelho-fonte" id="titulo-historia">História do Japão</h3>
+        <p id="t1">
+          O Japão é um país insular localizado no leste da Ásia, formado por milhares de ilhas, sendo as principais
+          Honshu, Hokkaido, Kyushu e Shikoku. A história japonesa é marcada por períodos de forte influência cultural,
+          guerras entre clãs e grande desenvolvimento tecnológico. Durante muitos séculos, o país foi governado por
+          imperadores e samurais, guerreiros que seguiam um rígido código de honra chamado bushidō. Após a Segunda
+          Guerra Mundial, o Japão passou por uma intensa reconstrução e se transformou em uma das maiores potências
+          econômicas e tecnológicas do mundo.
+        </p>
+      </div>
+      <img src="imgs/japaohistoria.webp" class="w-50 rounded-5" alt="">
+    </div>
+
+    <div class="d-flex container w-75 gap-5 my-4 py-3">
+      <img src="imgs/Costumbres-japonesas-con-Yukata.webp" class="w-50 rounded-5" alt="">
+      <div class="content">
+        <h3 class="vermelho-fonte" id="titulo-cultura">Cultura Japonesa</h3>
+        <p id="t2">
+          A cultura japonesa é conhecida por unir tradição e modernidade de forma única. Enquanto cidades como Tóquio
+          possuem arranha-céus, tecnologia avançada e luzes neon, o país também preserva templos antigos, cerimônias
+          do chá e festivais tradicionais. Os japoneses valorizam muito o respeito, a educação e a disciplina no dia a
+          dia. Além disso, o Japão influenciou o mundo com animes, mangás, videogames e culinária, especialmente
+          pratos como sushi, ramen e tempurá.
+        </p>
+      </div>
+    </div>
+
+    <div class="d-flex container w-75 gap-5 my-5 py-5">
+      <div class="content">
+        <h3 class="vermelho-fonte" id="titulo-tecnologia">Tecnologia e Inovação</h3>
+        <p id="t3">
+          O Japão é reconhecido mundialmente pelo avanço em tecnologia e inovação. Empresas japonesas ajudaram a
+          revolucionar áreas como eletrônicos, automóveis, robótica e jogos digitais. O país possui trens-bala
+          extremamente rápidos, cidades inteligentes e robôs utilizados em fábricas e até em hospitais. Mesmo sendo
+          altamente tecnológico, o Japão também busca soluções sustentáveis para problemas ambientais e urbanos,
+          investindo em energia limpa, transporte eficiente e pesquisas científicas de ponta.
+        </p>
+      </div>
+      <img src="imgs/miraikan-toquio-4.jpg" class="w-50 rounded-5" alt="">
+    </div>
+  </section>
+
+  <section class="my-5 py-5">
+    <h1 class="text-center azul-forte2-fonte my-5" id="titulo-galeria">Galeria</h1>
+
+    <div class=" container d-flex gap-3 ">
+      <div>
+        <img src="imgs/galeria/Japao_Osaka-9111.webp" onclick="img1()" class="galeria-grande rounded-5" alt="" id="img11">
+        <img src="imgs/galeria/25.jpg" onclick="img1()" class="galeria-grande rounded-5 d-none" alt="" id="img12">
+      </div>
+
+      <div class="d-grid gap-3">
+        <div class="d-flex gap-3">
+          <img src="imgs/galeria/OIP (1).jpg" onclick="img2()" class="galeria-pequena rounded-5" alt="" id="img21">
+          <img src="imgs/galeria/21.jpg" onclick="img2()" class="galeria-pequena rounded-5 d-none" alt="" id="img22">
+
+          <img src="imgs/galeria/OIP (2).jpg" onclick="img3()" class="galeria-pequena rounded-5" alt="" id="img31">
+          <img src="imgs/galeria/22.jpg" onclick="img3()" class="galeria-pequena rounded-5 d-none" alt="" id="img32">
+
+          <img src="imgs/galeria/OIP.jpg" onclick="img4()" class="galeria-pequena rounded-5" alt="" id="img41">
+          <img src="imgs/galeria/23.webp" onclick="img4()" class="galeria-pequena rounded-5 d-none" alt="" id="img42">
+        </div>
+
+        <div>
+          <img src="imgs/galeria/japan_main-scaled.jpg" onclick="img5()" class="w-100 rounded-5" style="height: 200px; object-fit: cover;" alt="" id="img51">
+          <img src="imgs/galeria/24.avif" onclick="img5()" class="w-100 rounded-5 d-none" style="height: 200px; object-fit: cover;" alt="" id="img52">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="azul-forte-bg" id="curiosidades-bg">
+    <h1 class="text-center azul-forte2-fonte p-5" id="titulo-curiosidades">Curiosidades</h1>
+
+    <div class="container">
+      <div class="row gap-5">
+
+        <div class="col azul-fraco-bg rounded-5 p-2" id="card-ilhas">
+          <h3 class="vermelho-fonte" id="titulo-ilhas">Ilhas</h3>
+          <p id="t4">
+            O Japão possui mais de 6 mil ilhas, embora apenas algumas sejam habitadas. As principais são Honshu,
+            Hokkaido, Kyushu e Shikoku.
+          </p>
+        </div>
+
+        <div class="col azul-fraco-bg rounded-5 p-2" id="card-trens">
+          <h3 class="vermelho-fonte" id="titulo-trens">Trens</h3>
+          <p id="t5">
+            Os trens-bala japoneses, chamados Shinkansen, estão entre os mais rápidos do mundo e são conhecidos pela
+            extrema pontualidade.
+          </p>
+        </div>
+
+        <div class="col azul-fraco-bg rounded-5 p-2" id="card-flor">
+          <h3 class="vermelho-fonte" id="titulo-flor">Flor Cerejeira</h3>
+          <p id="t6">
+            Os trens-bala japoneses, chamados Shinkansen, estão entre os mais rápidos do mundo e são conhecidos pela
+            extrema pontualidade.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="row gap-5 py-4">
+
+        <div class="col azul-fraco-bg rounded-5 p-2" id="card-barulho">
+          <h3 class="vermelho-fonte" id="titulo-barulho">Barulho ao Comer</h3>
+          <p id="t7">
+            No Japão, fazer barulho ao comer ramen não é considerado falta de educação. Na verdade, pode demonstrar
+            que a comida está saborosa.
+          </p>
+        </div>
+
+        <div class="col azul-fraco-bg rounded-5 p-2" id="card-tecnologia">
+          <h3 class="vermelho-fonte" id="titulo-tecnologia-card">Tecnologia</h3>
+          <p id="t8">
+            O Japão é um dos países mais avançados em robótica, utilizando robôs em fábricas, hotéis, restaurantes e
+            até hospitais.
+          </p>
+        </div>
+
+        <div class="col azul-fraco-bg rounded-5 p-2" id="card-templos">
+          <h3 class="vermelho-fonte" id="titulo-templos">Templos</h3>
+          <p id="t9">
+            O Japão é um dos países mais avançados em robótica, utilizando robôs em fábricas, hotéis, restaurantes e
+            até hospitais.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="azul-forte-bg p-5 mt-5" id="footer-bg">
+  <p class="text-center" id="footer-texto">Direitos reservados a @Gabriel Machado e @Nicoly Chernoski Tavares</p>
+</footer>
+</body>
+<script src="script/script.js"></script>
+
+</html>
